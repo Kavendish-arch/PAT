@@ -22,8 +22,6 @@ Array array_create(Array *a, int init_size){
 int array_size(const Array * a);
 // current 当前
 int array_current(const Array * a);
-// 销毁
-void array_destroy(Array * a);
 // 是否为空
 int is_empty(Array * a);
 // 是否满
