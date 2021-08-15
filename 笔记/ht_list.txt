@@ -1,0 +1,187 @@
+杭电OJ分类题目(1)
+
+HDU Introduction
+
+HDU 1000 A + B Problem
+HDU 1001 Sum Problem
+HDU 1089 A+B for Input-Output Practice (I)
+HDU 1090 A+B for Input-Output Practice (II)
+HDU 1091 A+B for Input-Output Practice (III)
+HDU 1092 A+B for Input-Output Practice (IV)
+HDU 1093 A+B for Input-Output Practice (V)
+HDU 1094 A+B for Input-Output Practice (VI)
+HDU 1095 A+B for Input-Output Practice (VII)
+HDU 1096 A+B for Input-Output Practice (VIII)
+HDU 1161 Eddy's mistakes
+HDU 1406 完数
+HDU BigNums
+
+HDU 1002 A + B Problem II
+HDU 1042 N!
+HDU 1047 Integer Inquiry
+HDU 1063 Exponentiation
+HDU 1316 How Many Fibs?
+HDU 1715 大菲波数
+HDU 1753 大明A+B
+HDU Hash
+
+HDU 1381 Crazy Search
+HDU 1423 Greatest Common Increasing Subsequence
+HDU 1496 Equations
+HDU KMP
+
+HDU 1358 Period
+HDU 1711 Number Sequence
+HDU Math Theory
+
+HDU 1019 Least Common Multiple
+HDU 1061 Rightmost Digit
+HDU 1097 A hard puzzle
+HDU 1108 最小公倍数
+HDU 1164 Eddy's research I
+HDU 1212 Big Number
+HDU 1370 Biorhythms
+HDU 1452 Happy 2004
+HDU 1573 X问题
+HDU 1695 GCD
+HDU 1788 Chinese remainder theorem again
+HDU 1796 How many integers can you find
+HDU 3334 Matrix Puzzle
+HDU Non-Mainstream
+
+HDU 1007 Quoit Design
+HDU 1123 Complicated Expressions
+HDU 1149 Structural Equivalence
+HDU 1172 猜数字
+HDU 1183 Not magic,but logic.
+HDU 1211 RSA
+HDU 1237 简单计算器
+HDU 1265 Floating Point Presentation
+HDU 1268 积木堆砌的城堡
+HDU 1270 小希的数表
+HDU 1277 全文检索
+HDU 1287 破译密码
+HDU 1289 Hat’s IEEE
+HDU 1356 The Balance
+HDU 1375 Chemical Reactions
+HDU 1402 A * B Problem Plus
+HDU 1427 速算24点
+HDU 1470 Island of Logic
+HDU 1563 Find your present!
+HDU 1582 AC Again
+HDU 1593 find a way to escape
+HDU 3337 Guess the number
+HDU Search
+
+HDU 1010 Tempter of the Bone
+HDU 1016 Prime Ring Problem
+HDU 1026 Ignatius and the Princess I
+HDU 1043 Eight
+HDU 1044 Collect More Jewels
+HDU 1067 Gap
+HDU 1072 Nightmare
+HDU 1104 Remainder
+HDU 1105 The Wolves and the Sheep
+HDU 1111 Secret Code
+HDU 1112 The Proper Key
+HDU 1175 连连看
+HDU 1180 诡异的楼梯
+HDU 1181 变形课
+HDU 1195 Open the Lock
+HDU 1198 Farm Irrigation
+HDU 1226 超级密码
+HDU 1240 Asteroids!
+HDU 1241 Oil Deposits
+HDU 1242 Rescue
+HDU 1252 Hike on a Graph
+HDU 1253 胜利大逃亡
+HDU 1254 推箱子
+HDU 1258 Sum It Up
+HDU 1307 N-Credible Mazes
+HDU 1312 Red and Black
+HDU 1372 Knight Moves
+HDU 1399 Starship Hakodate-maru
+HDU 1401 Solitaire
+HDU 1426 Sudoku Killer
+HDU 1429 胜利大逃亡(续)
+HDU 1430 魔板
+HDU 1455 Sticks
+HDU 1495 非常可乐
+HDU 1518 Square
+HDU 1547 Bubble Shooter
+HDU 1584 蜘蛛牌
+HDU 1664 Different Digits
+HDU 1667 The Rotation Game
+HDU 1728 逃离迷宫
+HDU 1732 Push Box
+HDU 3278 Puzzle
+HDU Sort
+
+HDU 1029 Ignatius and the Princess IV
+HDU 1040 As Easy As A+B
+HDU 1106 排序
+HDU 1209 Clock
+HDU 1236 排名
+HDU 1280 前m大的数
+HDU 1391 Number Steps
+HDU 2673 shǎ崽 OrOrOrOrz
+HDU Combinatorics
+
+HDU 1027 Ignatius and the Princess II
+HDU 1085 Holding Bin-Laden Captive!
+HDU 1100 Trees Made to Order
+HDU 1153 Magic Bitstrings
+HDU 1171 Big Event in HDU
+HDU 1261 字串数
+HDU 1294 Rooted Trees Problem
+HDU 1398 Square Coins
+HDU 1465 不容易系列之一
+HDU 1492 The number of divisors(约数) about Humble Numbers
+HDU 1510 White Rectangles
+HDU 1521 排列组合
+HDU 1570 A C
+HDU 1716 排列2
+HDU 1799 循环多少次？
+HDU Simulation
+
+HDU 1035 Robot Motion
+HDU 1057 A New Growth Industry
+HDU 1088 Write a simple HTML Browser
+HDU 1103 Flo's Restaurant
+HDU 1107 武林
+HDU 1109 Run Away
+HDU 1117 Booklet Printing
+HDU 1119 Simple Algorithmetics
+HDU 1146 Ferry Loading III
+HDU 1177 "Accepted today?"
+HDU 1182 Chessmen
+HDU 1263 水果
+HDU 1278 漂亮面料的设计
+HDU 1283 最简单的计算机
+HDU 1296 Polynomial Problem
+HDU 1310 Team Rankings
+HDU 1311 Relative Relatives
+HDU 1315 Basic
+HDU 1332 LC-Display
+HDU 1341 Simple Computers
+HDU 1343 Modular multiplication of polynomials
+HDU 1353 Exact Change Only
+HDU 1360 Spell checker
+HDU 1380 Nonstop Travel
+HDU 1382 Ball Toss
+HDU 1387 Team Queue
+HDU 1409 Is It a Number
+HDU 1461 Rotations and Reflections
+HDU 1497 Simple Library Management System
+HDU 1504 Disk Tree
+HDU 1537 Rubik's Cube
+HDU 1571 下沙小面的(1)
+HDU 1572 下沙小面的(2)
+HDU 1691 Chinese Chess
+HDU 1702 ACboy needs your help again!
+HDU 1707 Spring-outing Decision
+HDU 1727 Hastiness
+HDU 1735 字数统计
+HDU 1761 Spring-outing Decision(2)
+HDU 2678 TimeLimit
+

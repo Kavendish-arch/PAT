@@ -1,0 +1,134 @@
+socket{
+	创建套接字
+	在 Linux 下使用 <sys/socket.h> 头文件中 socket() 函数来创建套接字，原型为：
+	int socket(int af, int type, int protocol);
+	功能介绍：
+	socket() 函数用来创建套接字，确定套接字的各种属性，然后服务器端要用 bind() 函数将
+	套接字与特定的IP地址和端口绑定起来，只有这样，流经该IP地址和端口的数据才能交给套接字处理；
+	而客户端要用 connect() 函数建立连接。
+	
+	参数说明：
+	family：地址族（Address Family），也就是 IP 地址类型，常用的有 AF_INET 和 AF_INET6;
+	type：协议类型，常见类型是SOCK_STREAM,SOCK_DGRAM, SOCK_RAW, SOCK_PACKET等；
+	protocol：表示传输协议，常用的有 IPPROTO_TCP 和 IPPTOTO_UDP，分别表示 TCP 传输协议和 UDP 传输协议。
+	对于标准套接字来说，其值是0，对于原始套接字来说就是具体的协议值。
+
+	Windows 返回值不同，其他的和Linux一样。
+	SOCKET socket(int af, int type, int protocol);
+	
+	
+	套接字绑定函数：
+	int bind(int sock, const struct sockaddr *myaddr, socklen_t addrlen);
+	功能介绍：
+	bind函数主要应用于服务器模式一端，其主要的功能是将addrlen长度的地址(myaddr)与sockfd文件描述符绑定到一起，
+	在sockaddr中主要包含服务器端的协议族类型，网络地址和端口号等。在客户端模式中不需要使用bind函数。
+	当bind函数返回0时，为正确绑定，返回-1，则为绑定失败。
+	
+	参数说明：
+	sockfd：创建socket套接字时返回的文件描述符。
+	myaddr：存储IP、端口等信息。
+	addrlen：长度
+	int bind(SOCKET sock, const struct sockaddr *addr, int addrlen);
+	
+	
+	监听函数
+	int listen(int sockfd, int backlog);
+	功能介绍：
+	刚开始理解listen函数会有一个误区，就是认为其操作是在等在一个新的connect的到来，其实不是这样的，
+	真正等待connect的是accept操作，listen的操作就是当有较多的client发起connect时，server端不能及时的处理已经建立的连接，
+	这时就会将connect连接放在等待队列中缓存起来。这个等待队列的长度有listen中的backlog参数来设定。
+	listen和accept函数是服务器模式特有的函数，客户端不需要这个函数。
+	当listen运行成功时，返回0；运行失败时，返回值位-1.
+	参数说明：
+	sockfd：指前面socket创建的文件描述符;
+	backlog： 指server端可以缓存连接的最大个数，也就是等待队列的长度。
+	Windows
+	int listen(SOCKET sock, int backlog);
+	
+	
+	请求接收函数：
+	Linux	
+	int accept(int sockfd, struct sockaddr *client_addr, socklen_t *len);
+	功能介绍：
+	接受函数accept其实并不是真正的接受，而是客户端向服务器端监听端口发起的连接。
+	对于TCP来说，accept从阻塞状态返回的时候，已经完成了三次握手的操作。
+	Accept其实是取了一个已经处于connected状态的连接，然后把对方的协议族，网络地址以及端口都存在了client_addr中，
+	返回一个用于操作的新的文件描述符，该文件描述符表示客户端与服务器端的连接，通过对该文件描述符操作，
+	可以向client端发送和接收数据。同时之前socket创建的sockfd，则继续监听有没有新的连接到达本地端口。
+	返回大于0的文件描述符则表示accept成功，否则失败。
+	
+	参数说明：
+	sockfd：socket创建的文件描述符；
+	client_addr：本地服务器端的一个structsockaddr类型的变量，用于存放新连接的协议族，网络地址以及端口号等；
+	len：指第二个参数所指内容的长度，对于TCP来说其值可以用sizeof(structsockaddr_in)来计算大小，
+	要说明的是accept的第三个参数要是指针的形式，因为这个值是要传给协议栈使用的。
+	Windows
+	SOCKET accept(SOCKET sock, struct sockaddr *addr, int *addrlen);
+	
+	客户端请求连接函数：
+	Linux
+	int connect(int sock_fd, struct sockaddr *serv_addr,int addrlen);
+	功能介绍：
+	连接函数connect是属于client端的操作函数，其目的是向服务器端发送连接请求，这也是从客户端发起TCP三次握手请求的开始，
+	服务器端的协议族，网络地址以及端口都会填充到connect函数的serv_addr地址当中。
+	返回0时说明已经connect成功，返回值是-1时，表示connect失败。
+	
+	参数说明：
+	sock_fd：socket创建的文件描述符；
+	serv_addr：要连接的目标服务器的协议族，网络地址以及端口号；
+	addrlen：表示第二个参数内容的大小，与accept不同，这个值不是一个指针。
+	Windows
+	int connect(SOCKET sock, const struct sockaddr *serv_addr, int addrlen);
+
+
+	接受与发送数据
+	在服务器端和客户端建立连接之后是进行数据间的发送和接收，主要使用的接收函数是recv和read，发送函数是send和write。
+	因为对于socket套接字来说，最终实际操作的是文件描述符，所以可以使用对文件进行操作的接收和发送函数对socket套接字进行操作。
+	
+	发送
+	写数据
+	ssize_t write(int fd, const void *buf, size_t nbytes);
+	功能介绍：
+	write() 函数会将缓冲区 buf 中的 nbytes 个字节写入文件 fd，成功则返回写入的字节数，失败则返回 -1。
+	参数说明：
+	fd 为要写入的文件的描述符，
+	buf 为要写入的数据的缓冲区地址，
+	nbytes 为要写入的数据的字节数。
+	发送数据
+	int send(SOCKET sock, const char *buf, int len, int flags);
+	功能介绍：	
+	为客户端发送数据。
+	参数说明：
+	sock 为要发送数据的套接字，
+	buf 为要发送的数据的缓冲区地址，
+	len 为要发送的数据的字节数，flags 为发送数据时的选项。
+	flags：一般置为0。
+	
+	接收
+	接受数据
+	int recv(SOCKET sock, char *buf, int len, int flags);
+	功能介绍：
+	不论是客户还是服务器应用程序都用recv函数从TCP连接的另一端接收数据。
+	参数说明：
+	sock：指定接收端套接字描述符；
+	buf：指明一个缓冲区，该缓冲区用来存放recv函数接收到的数据；
+	len：指明buf的长度；
+	flags：一般置为0。
+	读取数据
+	ssize_t read(int fd, void *buf, size_t nbytes);
+	功能介绍：
+	read() 函数会从 fd 文件中读取 nbytes 个字节并保存到缓冲区 buf，成功则返回读取到的字节数（但遇到文件结尾则返回0），失败则返回 -1。
+	参数说明：
+	fd 为要读取的文件的描述符，
+	buf 为要接收数据的缓冲区地址，
+	nbytes 为要读取的数据的字节数。
+
+}
+
+File{
+	
+}
+
+Thread{
+	
+}

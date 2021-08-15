@@ -78,14 +78,16 @@ void insert_from_head(Link * p_head, int data){
 	//建构结点
 	Node * p = (Node * ) malloc(sizeof(Node));
     p->value = data;
-
 	//结点下一个是原头节点
 	p->next = p_head->head;
 	// 头节点 变成 新结点
 	p_head->head = p;
 }
+// 单链表 尾插法
 void insert(Link * p_head, int data, int index){
     Node * tail = p_head->head;
+
+    // 找到链表尾部
     for(int i = 1; i < index; i ++){
         tail = tail->next;
     }

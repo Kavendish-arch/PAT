@@ -2,3 +2,9 @@
 *.zip
 *.doc
 *.excl
+*.ova
+*.pdf
+CC++/
+doc/
+pdf/
+
