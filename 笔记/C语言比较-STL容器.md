@@ -2,21 +2,24 @@
 
 STL 数据结构和算法
 模板类
-1. 容器
 
 
-### Containers deque list vector map
+
+# 容器 Containers deque list vector map
 1. 顺序容器：vector deque list
 2. 关联容器：set multiset map multimap
 3. hashtable：unordered_map unordered_set
 4. 其他：stack(LIFO)堆栈, queue(FIFO)队列, priority_queue
-5. 
-Collection
 
 Vector 可增长对象数组 线程同步
  * vector  可变数组
  * 访问 下标和迭代器 iterator it  *it
- * 1) push_back() 2)pop_back() 3)size() 4)clear() 5)insert() 6)erase()
+ * 1) push_back() 
+ * 2)pop_back() 
+ * 3)size() 
+ * 4)clear() 
+ * 5)insert() 
+ * 6)erase()
  * 1.可变数组 2.数组输出在同一行 3.邻接表存储图
  
 Stack 栈
