@@ -1,8 +1,10 @@
 ## Makefile的规则
+```
         target ... : prerequisites ...
                 command
                 ...
                 ...
+ ```
         target也就是一个目标文件，可以是Object File，也可以是执行文件。还可以是一个标签（Label），对于标签这种特性，在后续的“伪目标”章节中会有叙述。
         prerequisites就是，要生成那个target所需要的文件或是目标。
         command也就是make需要执行的命令。（任意的Shell命令）
@@ -12,7 +14,7 @@ prerequisites中如果有一个以上的文件比target文件要新的话，comm
 
 
 例如
-
+```
     edit : main.o kbd.o command.o display.o insert.o search.o files.o utils.o
             gcc -o edit main.o kbd.o command.o display.o insert.o search.o files.o utils.o
     main.o : main.c defs.h
@@ -33,7 +35,7 @@ prerequisites中如果有一个以上的文件比target文件要新的话，comm
             gcc -c utils.c
     clean :
             rm edit main.o kbd.o command.o display.o insert.o search.o files.o utils.o
-
+```
 我们可以把这个内容保存在文件为Makefile或makefile的文件中，然后在该目录下直接输入命令“make”就可以生成执行文件edit。
 要删除执行文件和所有的中间目标文件，执行一下make clean
 

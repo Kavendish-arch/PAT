@@ -1,22 +1,45 @@
 ## 容器和数据结构
+
 STL 数据结构和算法
 模板类
-容器、算法、迭代器
-### Containers deque list vector map
+
+
+
+# 容器 Containers deque list vector map
 1. 顺序容器：vector deque list
 2. 关联容器：set multiset map multimap
 3. hashtable：unordered_map unordered_set
 4. 其他：stack(LIFO)堆栈, queue(FIFO)队列, priority_queue
 
-### Algorithms
-
-### iterators
-
-
+Vector 可增长对象数组 线程同步
  * vector  可变数组
  * 访问 下标和迭代器 iterator it  *it
- * 1) push_back() 2)pop_back() 3)size() 4)clear() 5)insert() 6)erase()
+ * 1) push_back() 
+ * 2)pop_back() 
+ * 3)size() 
+ * 4)clear() 
+ * 5)insert() 
+ * 6)erase()
  * 1.可变数组 2.数组输出在同一行 3.邻接表存储图
+ 
+Stack 栈
+ 
+Set   无序不可重复
+  * HashSet
+  * TreeSet
+  * LinkedSet
+  * EnumSet
+List 有序数列 大小可变数组 线程不同步
+*    LinkedList 数组实现
+*    ArrayList  链表实现
+Queue
+Deque
+*    ArrayDeque
+
+Map   无序，可重复，key-vale对应 字典
+*    HashMap
+*    TreeMap
+
 如何分配内存：
 doubling: 双倍增长的内存分配
 Elem: 头
@@ -64,16 +87,8 @@ capacity 是指在发生 realloc 前能允许的最大元素数，即预分配�
  *  typeName;
  * }
 
-pair< typeName1, typeName2, > name;
- * 当作结构体使用
- * pair.first pair.second
- * 比较：first second 用 == < > <= >= 比较
- * 用途代替二元结构体和构造函数，
- * 作为map的键值
-
-priority_queue 结构体的优先级设置
-  * 优先级队列和sort() 的cmp相反
-
+2. 算法
+### Algorithms
  algorithm 头文件
  * max() min()两个数
  * abs()整数
@@ -85,21 +100,27 @@ priority_queue 结构体的优先级设置
  * lower_bound()第一个小于等于 value的值
  * upper_bound()第一个大于等于value的值
 
+3. 迭代器
 
-Collection
-    Vector 可增长对象数组 线程同步
-    Stack
-    Set   无序不可重复
-     *    HashSet
-     *    TreeSet
-     *    LinkedSet
-     *    EnumSet
-    List 有序数列 大小可变数组 线程不同步
-     *    LinkedList 数组实现
-     *    ArrayList  链表实现
-    Queue
-    Deque
-     *    ArrayDeque
-    Map   无序，可重复，key-vale对应 字典
-     *    HashMap
-     *    TreeMap
+### iterators
+
+
+pair< typeName1, typeName2, > name;
+ * 当作结构体使用
+ * pair.first pair.second
+ * 比较：first second 用 == < > <= >= 比较
+ * 用途代替二元结构体和构造函数，
+ * 作为map的键值
+
+priority_queue 结构体的优先级设置
+  * 优先级队列和sort() 的cmp相反
+
+
+
+
+
+
+
+4. 配置器
+5. 配接器
+6. 仿函数
