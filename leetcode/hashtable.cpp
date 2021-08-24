@@ -3,7 +3,9 @@
 #include <stdlib.h>
 #include <map>
 #include <vector>
-
+/**
+ * 求众数
+ */
 using namespace std;
 
 int hash_code_1(int x, int size) {
