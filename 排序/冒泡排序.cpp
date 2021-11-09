@@ -24,6 +24,7 @@ void bubble_sort(int a[], int n) {
 
 int main(int argc, char const *argv[])
 {
+    
     printf("%d", !true);
     return 0;
 }

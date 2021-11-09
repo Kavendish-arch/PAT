@@ -2,7 +2,9 @@ import _thread
 import threading
 from datetime import datetime
 from time import *
-
+# jython IronPython PyPy CPython 解释器
+# ctypes 模块
+# multiprocessing 
 tickets = [
     ['2018-4-7 8:00', '北京', '沈阳', 10, 120],
     ['2018-4-7 8:00', '北京', '沈阳', 10, 120],
