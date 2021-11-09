@@ -6,7 +6,10 @@
  中序，先序，后序遍历
  */
 
- #include <stdio.h>
+#include <stdio.h>
+#include <stack>
+using namespace std;
+
 
 struct BinaryTreeNode {
 
@@ -25,6 +28,10 @@ void BinaryTreeDestory(BinaryTreeNode * root){
 		root = NULL;
 	}
 }
+/**
+ * 先序遍历
+ * 递归法 
+ */
 
 void BinaryTreePreOrder(BinaryTreeNode * root){
 	if (root){
@@ -34,6 +41,24 @@ void BinaryTreePreOrder(BinaryTreeNode * root){
 	BinaryTreePreOrder(root->right_child);
 }
 
+void PreOrder2(BinaryTreeNode * root){
+	stack<*BinaryTreeNode> S;
+	BinaryTreeNode *p = root;		
+	while (p || !S.empty()){
+		if(p){
+			S.push(p);
+			p = p->left_child;
+		}
+		else {
+			p = S.pop();
+			printf(p->data);
+			p = p->right_child;
+		}
+		/* code */
+	}
+	
+}
+
 void BinaryTreeInOrder(BinaryTreeNode * root){
 	BinaryTreePreOrder(root->left_child);
 	if (root){
@@ -41,7 +66,22 @@ void BinaryTreeInOrder(BinaryTreeNode * root){
 	}	
 	BinaryTreePreOrder(root->right_child);
 }
-
+void InOrder(BinaryTreeNode * root){
+	stack<BinaryTreeNode> s;
+	BinaryTreeNode * p = root;
+	while (p || !s.empty())
+	{
+		if(p){
+			printf(p->data);
+			s.push(p);
+			p->left_child;
+		}else{
+			p = s.pop();
+			p->right_child;
+		}
+	}
+	
+}
 void BinaryTreePostOrder(BinaryTreeNode * root){
 	BinaryTreePreOrder(root->left_child);
 	BinaryTreePreOrder(root->right_child);
