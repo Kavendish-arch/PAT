@@ -1,10 +1,18 @@
+# 生成文件
 *.exe
+*.class
+
+# 大文件类型
 *.zip
 *.doc
 *.excl
 *.ova
 *.pdf
+# 图片
+*.png
+# 目录
 CC++/
 doc/
 pdf/
+
 

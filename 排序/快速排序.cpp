@@ -23,6 +23,7 @@ void printf_array(int A[], int high) {
     printf("%d]\n",A[high]);
 }
 
+
 void quick_sort(int a[], int low, int high) {
     if (low < high) {
         printf_array(a, max);

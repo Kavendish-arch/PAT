@@ -1,14 +1,17 @@
 
 #include <stdio.h>
 #define Max 100
+
+
+
 typedef struct Link
 {
 	int value;
 	struct Link * next;
 }SqlList;
 
-
-Link InitList(int* num){
+template <typename T>
+Link InitList(int num){
 	Link sq;
 	int len = sizeof(num) / sizeof(num[0]);
 	printf("%d ",len);
@@ -22,10 +25,14 @@ Link InitList(int* num){
 }
 
 int Length(Link *L){
-	// return L->lenth;
+	return 1;
 }
-void swap (int *a, int *b){
-
+template<typename T>
+void swap (T *a, T *b)
+{
+	T tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
 int main(int argc, char const *argv[])
 {
@@ -34,12 +41,9 @@ int main(int argc, char const *argv[])
 	// Link sq = InitList(a);
 	// printf("%d", Length(&sq));
 
-	int b = 23;
-	int &b = b;
-	int *p = a;
-	// *p = 12;
-	
-	printf("%p", p);
+	int c = 0, b = 5;
+	swap(&c,&b);
+	printf("%d,%d", c,b);
 
 	return 0;
 }

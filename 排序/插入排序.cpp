@@ -7,6 +7,7 @@ void printf_array(int A[], int high) {
     }
     printf("%d]\n",A[high]);
 }
+
 int binary_search(int a[], int low, int high, int target) {
     while (low <= high)
     {
@@ -33,11 +34,11 @@ void insert_sort(int a[], int len) {
             }
             a[j+1] = a[0];
         }
-        printf_array(a,len);
     }
     a[0] = 0;
-    printf_array(a,len);
 }
+
+
 
 int main(int argc, char const *argv[])
 {
