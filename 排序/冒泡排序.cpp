@@ -1,25 +1,32 @@
-#include<stdio.h>
+#include <stdio.h>
 
-#include<iostream>
-void swap(int *a, int *b) {
+#include <iostream>
+void swap(int *a, int *b)
+{
     int tmp = *a;
     *a = *b;
     *b = tmp;
 }
-bool cmp(int a, int b) {
+bool cmp(int a, int b)
+{
     return a > b;
 }
-void bubble_sort(int *a, int n) {
-    for (int i = 0; i < n; i ++) {
-        for (int j = i + 1; j < n; j++){
-            if (a[i] > a[j]) {
+void bubble_sort(int *a, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = i + 1; j < n; j++)
+        {
+            if (a[i] > a[j])
+            {
                 swap(&a[i], &a[j]);
             }
-        }  
+        }
     }
 }
 
-void select_sort(int * a, int n){
+void select_sort(int *a, int n)
+{
     for (int i = 0; i < n; i++)
     {
         int index = i;
@@ -34,36 +41,36 @@ void select_sort(int * a, int n){
     }
 }
 
-void print_array(int * a, int n)
+void print_array(int *a, int n)
 {
     for (int i = 0; i < n; i++)
     {
-        printf("%d ",a[i]);
+        printf("%d ", a[i]);
     }
-
 }
 /**
- * @brief 
- * 
- * @param a 
- * @param n 
+ * @brief
+ *
+ * @param a
+ * @param n
  */
-void count_sort(int * a, int n)
+void count_sort(int *a, int n)
 {
-    int * result = (int *) malloc( sizeof(int) * n + 1);
-    for(int i = 0; i < n + 1; i++)
+    int *result = (int *)malloc(sizeof(int) * n + 1);
+    for (int i = 0; i < n + 1; i++)
     {
         result[i] = 0;
     }
 
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        result[a[i]] ++;
+        result[a[i]]++;
     }
-    for(int i = 0, k = 0; i < n + 1; i++)
+    for (int i = 0, k = 0; i < n + 1; i++)
     {
-        if(result[i] > 0){
-        
+        if (result[i] > 0)
+        {
+
             for (int j = 0; j < result[i]; j++)
             {
                 a[k++] = i;
@@ -72,14 +79,14 @@ void count_sort(int * a, int n)
     }
 }
 
+void _merge(int *a, int l_a, int *b, int l_b, int *result);
 
-void _merge(int *a, int l_a, int *b, int l_b, int * result);
-
-void _merge_sort(int * a, int head, int tail)
+void _merge_sort(int *a, int head, int tail)
 {
 
-    if(tail - head == 1){
-        _merge(a, 1,a,1,a);
+    if (tail - head == 1)
+    {
+        _merge(a, 1, a, 1, a);
     }
 
     int mid = (tail - head) / 2 + head;
@@ -87,26 +94,30 @@ void _merge_sort(int * a, int head, int tail)
     _merge_sort(a, mid + 1, tail);
 }
 
-void _merge(int *a, int l_a, int *b, int l_b, int * result)
+void _merge(int *a, int l_a, int *b, int l_b, int *result)
 {
     int j = 0, k = 0;
-    for(int i = 0; i < l_a + l_b; i++){
+    for (int i = 0; i < l_a + l_b; i++)
+    {
 
-        if (k < l_a && j < l_b){
-            if(a[k] <= b[j])
+        if (k < l_a && j < l_b)
+        {
+            if (a[k] <= b[j])
             {
                 result[i] = a[k];
                 k++;
             }
-            else 
+            else
             {
                 result[i] = b[j++];
             }
         }
-        else if(k >= l_a){
+        else if (k >= l_a)
+        {
             result[i] = b[j++];
         }
-        else if(j >= l_b){
+        else if (j >= l_b)
+        {
             result[i] = a[k++];
         }
     }
@@ -114,11 +125,11 @@ void _merge(int *a, int l_a, int *b, int l_b, int * result)
 
 int main(int argc, char const *argv[])
 {
-    int a [] = {1,5,4,6,3,7,2,8};
+    int a[] = {1, 5, 4, 6, 3, 7, 2, 8};
     // bubble_sort(a,8);
     // select_sort(a,8);
     // count_sort(a, 8);
     _merge_sort(a, 0, 7);
-    print_array(a,8);
+    print_array(a, 8);
     return 0;
 }

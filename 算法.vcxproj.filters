@@ -1,0 +1,821 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="1005.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nqueen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1001.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1002.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1003.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="10032.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1004.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1006.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1011.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1012.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1069.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\10code\code\DJS.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\11code\code\003-socket-tcp-client\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\11code\code\003-socket-tcp-server\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\11code\code\003-socket-udp-client\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\11code\code\003-socket-udp-server\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\12code\code\006-memory\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\13code\code\007-createfile\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\13code\code\007-file\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\13code\code\007-insert-sort\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\13code\code\007-link-sort\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\13code\code\007-shell-sort\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\13code\code\007-sort\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\14code\code\008-3quickway-sort\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\14code\code\008-binary-search\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\14code\code\008-bst-search\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\14code\code\008-heap-sort\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\14code\code\008-quick-position\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\15code\code\009-dp-matrix-multiply\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\15code\code\009-dp-productline\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\15code\code\009-hash-link\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\16code\code\010-dp-lcs\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\16code\code\010-dp_optimalbst\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\16code\code\010-gread-schedule\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\16code\code\010-string-kmp\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\16code\code\010-string-lsd\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\16code\code\010-string-tirest\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\16code\code\010-string-tst\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\16code\__macosx\code\010-dp-lcs\._main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\16code\__macosx\code\010-dp_optimalbst\._main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\16code\__macosx\code\010-gread-schedule\._main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\16code\__macosx\code\010-string-kmp\._main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\16code\__macosx\code\010-string-lsd\._main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\16code\__macosx\code\010-string-tirest\._main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\16code\__macosx\code\010-string-tst\._main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\1code\code\1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\1code\code\2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\1code\code\3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\1code\code\4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\1code\code\5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\1code\code\6.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\2code\code\23.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\2code\code\11.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\2code\code\12.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\2code\code\13.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\2code\code\14.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\2code\code\15.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\2code\code\16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\2code\code\17.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\2code\code\18.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\2code\code\19.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\2code\code\20.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\2code\code\21.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\2code\code\22.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\13.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\16.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\10.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\11.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\12.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\14.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\15.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\17.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\18.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\21.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\22.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\23.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\24.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\25.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\6.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\7.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\code\9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._13.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._16.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._10.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._11.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._12.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._14.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._15.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._17.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._18.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._21.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._22.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._23.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._24.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._25.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._6.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._7.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\3code\__macosx\code\._9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\4code\code\1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\4code\code\10.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\4code\code\11.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\4code\code\12.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\4code\code\13.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\4code\code\14.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\4code\code\15.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\4code\code\16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\4code\code\2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\4code\code\3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\4code\code\4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\4code\code\5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\4code\code\6.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\4code\code\7.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\4code\code\8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\4code\code\9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\5code\code\1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\5code\code\10.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\5code\code\11.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\5code\code\12.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\5code\code\13.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\5code\code\14.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\5code\code\2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\5code\code\3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\5code\code\4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\5code\code\6.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\5code\code\7.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\5code\code\8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\5code\code\9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\5code\code\exam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\6code\code\1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\6code\code\2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\6code\code\3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\6code\code\4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\7code\code\1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\7code\code\2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\7code\code\3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\8code\code\1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\8code\code\2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\8code\code\3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\8code\code\4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\9code\code\1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\9code\code\2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\9code\code\3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\9code\code\图的遍历.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\hashtable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\leetcode_求众数.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\tempCodeRunnerFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\一维数组动态和.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\买股票.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\二分查找.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\吃豆人.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\回文串.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\大数运算.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\字符串唯一字符.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\数组交集.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\最小消耗爬楼梯.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\杨辉三角.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\求众数.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\爬楼梯.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\获取生成数组中的最大值.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\tempCodeRunnerFile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\大数运算.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leetcode\指针.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="动态规划\最大子列和.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="动态规划\背包问题.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="回溯算法\back_track.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="排序\tempCodeRunnerFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="排序\冒泡排序.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="排序\希尔排序.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="排序\快速排序.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="排序\插入排序.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="搜索\tempCodeRunnerFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="搜索\二分查找.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="搜索\反转字符串.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="搜索\链表搜索.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\demo2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\hash_map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\hash_tab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\Link.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\Link2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\stack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\一级指针初始化.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\结构体内存对齐.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\初级算法\旋转数组.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\初级算法\最大股票利润.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\哈希表\hash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\数组\动态数组.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\树\hanoi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\树\替换空格.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\树\二叉搜索树\avlTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\树\二叉搜索树\BST.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\树\二叉搜索树\递归求和.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\树\二叉树\myVector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\树\二叉树\中序遍历.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\树\二叉树\删除重复元素.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\树\二叉树\平衡二叉树判断.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\树\二叉树\广度优先遍历.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构\线性表\数组循环移动.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构实例教程（c语言版）-实验\实验\10\test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构实例教程（c语言版）-实验\实验\11\test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构实例教程（c语言版）-实验\实验\12\test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构实例教程（c语言版）-实验\实验\3\test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构实例教程（c语言版）-实验\实验\4\test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构实例教程（c语言版）-实验\实验\5\test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构实例教程（c语言版）-实验\实验\6\test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构实例教程（c语言版）-实验\实验\7\test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构实例教程（c语言版）-实验\实验\8\test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构实例教程（c语言版）-实验\实验\9\test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构实例教程（c语言版）-实验\实验\成绩\test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="数据结构实例教程（c语言版）-实验\实验\结构体模拟登录\模拟用户登录.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="概率算法\7_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="概率算法\ran.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="笔记\C语言笔记-文件操作.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="算法\1001.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="算法\1002.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="算法\1003.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="算法\10032.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="算法\1004.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="算法\1006.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="算法\1011.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="算法\1012.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="算法\1069.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="算法\Ackerman递归函数.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="算法\tempCodeRunnerFile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="算法\全排列递归函数.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="算法\字符串解决\1036 跟奥巴马一起编程 (15 分).c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="递归\isPower.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="递归\Untitled-1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="递归\Untitled-2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="递归\组合偶数.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="数据结构\link.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="数据结构\哈希表\hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="数据结构\数组\array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="笔记\c++基础\32位系统和64位有什么区别.html" />
+    <None Include="笔记\c++基础\C++11新特性.html" />
+    <None Include="笔记\c++基础\c++11新特性_2.html" />
+    <None Include="笔记\c++基础\C++不是类型安全.html" />
+    <None Include="笔记\c++基础\c++类的8个默认函数.html" />
+    <None Include="笔记\c++基础\const.html" />
+    <None Include="笔记\c++基础\main函数执行之前，还会执行什么代码？.html" />
+    <None Include="笔记\c++基础\malloc(0).html" />
+    <None Include="笔记\c++基础\volatile防止编译器优化怎么理解.html" />
+    <None Include="笔记\c++基础\不能是内联函数的函数.html" />
+    <None Include="笔记\c++基础\为什么有符号整形正数比负数少1.html" />
+    <None Include="笔记\c++基础\内存泄漏.html" />
+    <None Include="笔记\c++基础\函数参数问题，引用，const.html" />
+    <None Include="笔记\c++基础\函数定义可以在头文件吗.html" />
+    <None Include="笔记\c++基础\初始化列表、赋值、构造函数区别（待）.html" />
+    <None Include="笔记\c++基础\哈夫曼编码.html" />
+    <None Include="笔记\c++基础\宏和内联函数和普通函数、结构体和类的区别.html" />
+    <None Include="笔记\c++基础\模板放在.h还是.cpp.html" />
+    <None Include="笔记\c++基础\源程序编译过程.html" />
+    <None Include="笔记\c++基础\类型int.html" />
+    <None Include="笔记\c++基础\解决哈西冲突.html" />
+    <None Include="笔记\c++基础\重载覆盖隐藏.html" />
+    <None Include="笔记\c++基础\stl\hash_table.html" />
+    <None Include="笔记\c++基础\stl\hash拉链过长的优化.html" />
+    <None Include="笔记\c++基础\stl\https---www.cnblogs.com-JackyTecblog-archive-2012-.html" />
+    <None Include="笔记\c++基础\stl\map与unordered_map区别，应用场景.html" />
+    <None Include="笔记\c++基础\stl\map键存结构体的处理.html" />
+    <None Include="笔记\c++基础\stl\stl仿函数-operator.html" />
+    <None Include="笔记\c++基础\stl\stl六大组件.html" />
+    <None Include="笔记\c++基础\stl\STL空间配置器.html" />
+    <None Include="笔记\c++基础\stl\stl迭代器.html" />
+    <None Include="笔记\c++基础\stl\stl配接器-容器 迭代器 仿函数.html" />
+    <None Include="笔记\c++基础\stl\为什么hash表长度2的次幂访问效率高.html" />
+    <None Include="笔记\c++基础\stl\总结.html" />
+    <None Include="笔记\c++基础\智能指针\auto_ptr.html" />
+    <None Include="笔记\c++基础\智能指针\shared_ptr.html" />
+    <None Include="笔记\c++基础\智能指针\unique_ptr.html" />
+    <None Include="笔记\c++基础\智能指针\weak_ptr.html" />
+    <None Include="笔记\c++基础\智能指针\这里是使用函数.html" />
+  </ItemGroup>
+</Project>

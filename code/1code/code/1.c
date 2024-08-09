@@ -1,4 +1,5 @@
 #include "stdio.h"
 void main()
-{	printf("Hello World!");/*Êä³öÒ»¸ö×Ö·û´®*/
+{
+    printf("Hello World!"); /*ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½*/
 }
