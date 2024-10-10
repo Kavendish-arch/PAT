@@ -13,6 +13,13 @@ typedef struct _link
     Node *tail;
 } Link;
 
+struct ListNode
+{
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {} //
+};
+
 // 传入的结构体指针 是结构体变量
 // 尾插法
 void append(Node *head, int data)
@@ -20,7 +27,7 @@ void append(Node *head, int data)
     Node *p = (Node *)malloc(sizeof(Node));
     p->value = data;
     p->next = NULL;
-    
+
     Node *last = head;
     if (last)
     {
@@ -111,6 +118,33 @@ void insert(Link *p_head, int data, int index)
 
     p->next = tail->next;
     tail->next = p;
+}
+
+ListNode *removeElements(ListNode **head, int val)
+{
+    while (head != nullptr && head.val != val)
+    {
+        ListNode *tmp = head;
+        head = head->next;
+        delete tmp;
+    }
+
+    ListNode *cur = head;
+    while (cur != nullptr && cur->val != NULL)
+    {
+        if (cur->next->val == val)
+        {
+            ListNode *tmp = cur->next;
+            cur->next = cur->next->next;
+            delete tmp;
+        }
+        else
+        {
+            cur = cur->next;
+        }
+
+        return head;
+    }
 }
 void remove(Link *p_head, int *data, int index)
 {

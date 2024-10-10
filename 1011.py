@@ -1,5 +1,5 @@
 #
-# 使用python 处理不哟个考虑大数
+# 使用python 处理不考虑大数
 
 n = int(input())
 

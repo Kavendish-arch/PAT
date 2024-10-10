@@ -2,6 +2,118 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "HeapSort",
+            "request": "launch",
+            "mainClass": "HeapSort",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
+            "type": "java",
+            "name": "HeapSort",
+            "request": "launch",
+            "mainClass": "排序.堆排序.HeapSort",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
+            "type": "java",
+            "name": "solution2",
+            "request": "launch",
+            "mainClass": "solution2",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
+            "type": "java",
+            "name": "DelArr",
+            "request": "launch",
+            "mainClass": "双指针问题.DelArr",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
+            "type": "java",
+            "name": "SolueThree",
+            "request": "launch",
+            "mainClass": "SolueThree",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "双指针.Delete.Solution",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
+            "type": "java",
+            "name": "ThreeNumClose",
+            "request": "launch",
+            "mainClass": "ThreeNumClose",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
+            "type": "java",
+            "name": "swapMinMax",
+            "request": "launch",
+            "mainClass": "swapMinMax",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
+            "type": "java",
+            "name": "MaxThreadTest",
+            "request": "launch",
+            "mainClass": "MaxThreadTest",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
+            "type": "java",
+            "name": "BackDP",
+            "request": "launch",
+            "mainClass": "BackDP",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
+            "type": "java",
+            "name": "SortSW",
+            "request": "launch",
+            "mainClass": "SortSW",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
+            "type": "java",
+            "name": "SortSW",
+            "request": "launch",
+            "mainClass": "动态规划.SortSW",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
+            "type": "java",
+            "name": "IteratorDemo",
+            "request": "launch",
+            "mainClass": "IteratorDemo",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
             "name": "C/C++: g++.exe build and debug active file",
             "type": "cppdbg",
             "request": "launch",

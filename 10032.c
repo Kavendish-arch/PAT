@@ -1,5 +1,4 @@
-#include<stdio.h>
-
+#include <stdio.h>
 
 /**
  * 为了用事实说明挖掘机技术到底哪家强，PAT 组织了一场挖掘机技能大赛。现请你根据比赛结果统计出技术最强的那个学校。
@@ -13,22 +12,24 @@
 输入样例：
  */
 
-int main() {
+int main()
+{
     int n = 0;
     int school_grade[100004] = {0};
-    scanf("%d",&n);
+    scanf("%d", &n);
     int k = 0, v = 0;
     for (int i = 0; i < n; i++)
     {
-        int x,y;
-        scanf("%d%d",&x,&y);
+        int x, y;
+        scanf("%d%d", &x, &y);
         school_grade[x] += y;
-        if (school_grade[x] > v){
+        if (school_grade[x] > v)
+        {
             k = x;
             v = school_grade[x];
         }
     }
-    printf("%d %d\n",k,v);
-    
+    printf("%d %d\n", k, v);
+
     return 0;
 }

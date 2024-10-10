@@ -23,21 +23,22 @@
  * c = a * b
  */
 
-#include<stdio.h>
-int pat_2(char * a);
+#include <stdio.h>
+int pat_2(char *a);
 
-int main() {
+int main()
+{
     int n = 0;
-    scanf("%d",&n);
+    scanf("%d", &n);
     char a[102];
     for (int i = 0; i < n; i++)
     {
-        scanf("%s",a);
+        scanf("%s", a);
         if (pat_2(a) != 1)
         {
             printf("NO\n");
         }
-        else 
+        else
         {
             printf("YES\n");
         }
@@ -45,13 +46,14 @@ int main() {
 
     return 0;
 }
-int pat_2(char * a) {
+int pat_2(char *a)
+{
     int i = 0;
     int p = 0, t = 0;
-    
+
     while (a[i] != '\0')
     {
-        if(a[i] != 'P' && a[i] != 'A' && a[i] != 'T')
+        if (a[i] != 'P' && a[i] != 'A' && a[i] != 'T')
         {
             return 0;
         }
@@ -72,8 +74,8 @@ int pat_2(char * a) {
     {
         return 0;
     }
-    if (p * (t-p-1) == i - t - 1)
+    if (p * (t - p - 1) == i - t - 1)
     {
         return 1;
-    } 
+    }
 }
