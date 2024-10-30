@@ -1,0 +1,80 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.*;
+
+public class Main2 {
+
+
+    public static boolean canBecomePeriodicByOneSwap(String s) {
+        int n = s.length();
+        char[] chars = s.toCharArray();
+
+        // 检查字符串是否已经是周期串
+        for (int length = 1; length <= n / 2; length++) {
+            if (n % length == 0) {
+                String pattern = s.substring(0, length);
+                boolean isPeriodic = true;
+                for (int i = length; i < n; i += length) {
+                    if (!pattern.equals(s.substring(i, i + length))) {
+                        isPeriodic = false;
+                        break;
+                    }
+                }
+                if (isPeriodic) {
+                    return true;
+                }
+
+                // 尝试通过一次交换变为周期串
+                for (int i = 0; i < length; i++) {
+                    for (int j = i + length; j < n; j += length) {
+                        if (chars[i] != chars[j]) {
+                            for (int k = j + 1; k < n; k++) {
+                                if (chars[i] == chars[k] && chars[k - (k % length)] == chars[j]) {
+                                    // 执行交换
+                                    swap(chars, j, k);
+                                    if (pattern.equals(new String(chars, j, length))) {
+                                        return true;
+                                    }
+                                    // 撤销交换
+                                    swap(chars, j, k);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    // 交换字符数组中的两个字符
+    private static void swap(char[] chars, int i, int j) {
+        char temp = chars[i];
+        chars[i] = chars[j];
+        chars[j] = temp;
+    }
+//
+//        public static void main(String[] args) {
+//            String s = "abacabac";
+//            System.out.println(canBecomePeriodicByOneSwap(s)); // 输出应该为 true 或 false
+//        }
+
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        in.nextLine();
+        for (int i = 0; i < n; i++) {
+            String str = in.nextLine();
+            Boolean S = canBecomePeriodicByOneSwap(str);
+//            System.out.println(S);
+            if (S) {
+                System.out.println("YES");  // 应该输出true
+
+            } else {
+                System.out.println("NO");  // 应该输出true
+            }
+
+        }
+    }
+}

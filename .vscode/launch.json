@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MainSaima",
+            "request": "launch",
+            "mainClass": "MainSaima",
+            "projectName": "PAT_f7a28da5"
+        },
+        {
+            "type": "java",
             "name": "HeapSort",
             "request": "launch",
             "mainClass": "HeapSort",
