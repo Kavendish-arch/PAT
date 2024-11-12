@@ -8,11 +8,13 @@
 *.excl
 *.ova
 *.pdf
+
+
 # 图片
 *.png
 # 目录
 CC++/
 doc/
 pdf/
-
+out/
 
