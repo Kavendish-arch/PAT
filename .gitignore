@@ -18,3 +18,9 @@ doc/
 pdf/
 out/
 
+
+# 编辑器生成相关文件
+.vs/
+.vscode/
+.idea/
+
